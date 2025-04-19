@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucki – Grafik & Editor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    nav {
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #ccc;
+      padding: 0.5rem 1rem;
+      background: #1a1a1a;
+      border-radius: 12px;
+      transition: background 0.3s, color 0.3s;
+    }
+    nav a:hover {
+      background: #333;
+      color: white;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .portfolio-item {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .portfolio-item:hover {
+      transform: scale(1.03);
+    }
+    .portfolio-item img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .contact-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #1a1a1a;
+      color: #ccc;
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+    }
+    .contact-btn:hover {
+      background: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lucki</h1>
+    <p>Grafik & Video editor</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="home">
+    <h2>O mně</h2>
+    <p>Jsem grafik a video editor s více než 2 roky zkušeností. Zaměřuju se na moderní styl, kvalitní vizuály a čisté provedení.</p>
+  </section>
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200" alt="Ukázka 1">
+        <p>Thumbnail</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200" alt="Ukázka 2">
+        <p>Edit</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200" alt="Ukázka 3">
+        <p>Logo</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p>Najdeš mě na Instagramu:</p>
+    <a class="contact-btn" href="https://instagram.com/" target="_blank">@lucki</a>
+  </section>
+  <footer>
+    &copy; 2025 Lucki. Všechna práva vyhrazena.
+  </footer>
+</body>
+</html>
